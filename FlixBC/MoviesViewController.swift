@@ -57,6 +57,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         // stores description of movie
         let synopsis = movie["overview"] as! String
         
+        //print(movie)
+        
         // Update labels on app
         cell.titleLabel.text = title
         cell.synopsisLabel.text = synopsis
