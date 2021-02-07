@@ -43,7 +43,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
                 self.movies = dataDictionary["results"] as! [[String:Any]]
                 
                 self.collectionView.reloadData()
-                print(self.movies)
+                //print(self.movies)
                }
             }
             task.resume()
@@ -71,14 +71,25 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     
+     // cell that was tapped on
+     let cell = sender as! UICollectionViewCell
+    
+    // Get specific cell index that was clicked on
+    let indexPath = collectionView.indexPath(for: cell)!
+    
+    // get movie that was tapped
+    let movieTapped = movies[indexPath.row]
+    
+    // set movies dictionary of other class to the movie that was clicked on
+    let detailsViewController = segue.destination as! MovieGridDetailViewController
+    detailsViewController.movie = movieTapped
+    
+    // https://www.youtube.com/watch?v=WqZhXfWe_oY
+     
+ }
 
 }
