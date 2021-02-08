@@ -9,10 +9,17 @@ import UIKit
 
 class MovieGridVideoViewController: UIViewController {
 
+    var movie: [String:Any]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        print(movie)
+        print("*************")
+        
+        let movieID = movie["id"] as! Int
+        print(movieID)
+        
     }
     
 

@@ -40,5 +40,15 @@ class MovieGridDetailViewController: UIViewController {
         let backdropUrl = URL(string: baseUrl + backdropPath)
         backImage.af_setImage(withURL: backdropUrl!)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+       // get movie that was tapped
+       let movieTapped = movie
+       
+       // set movies dictionary of other class to the movie that was clicked on
+       let detailsViewController = segue.destination as! MovieGridVideoViewController
+       detailsViewController.movie = movieTapped
+    }
 
 }

@@ -117,6 +117,9 @@
                                 <rect key="frame" x="26" y="210" width="125" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="06J-Fd-Flu" kind="show" id="o9W-gk-qqa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nRi-JC-DMa"/>

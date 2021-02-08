@@ -87,9 +87,6 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
     // set movies dictionary of other class to the movie that was clicked on
     let detailsViewController = segue.destination as! MovieGridDetailViewController
     detailsViewController.movie = movieTapped
-    
-    // https://www.youtube.com/watch?v=WqZhXfWe_oY
-     
  }
 
 }
