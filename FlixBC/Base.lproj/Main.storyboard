@@ -98,9 +98,6 @@
                                 <rect key="frame" x="20" y="210" width="137" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="aky-0R-fpL" appends="YES" id="uKI-qd-xPg"/>
-                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkT-bK-EhS">
                                 <rect key="frame" x="165" y="361" width="176" height="46"/>
@@ -116,6 +113,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5i2-JO-Cps">
+                                <rect key="frame" x="26" y="210" width="125" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nRi-JC-DMa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -129,18 +131,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Upn-ga-cQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="aky-0R-fpL">
-                    <connections>
-                        <segue destination="06J-Fd-Flu" kind="show" id="qF2-1Q-x9W"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2224.6376811594205" y="989.73214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Grid Video View Controller-->
         <scene sceneID="sLQ-cY-ahw">
             <objects>
-                <viewController id="06J-Fd-Flu" sceneMemberID="viewController">
+                <viewController id="06J-Fd-Flu" customClass="MovieGridVideoViewController" customModule="FlixBC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j1w-Df-1q8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
