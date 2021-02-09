@@ -39,7 +39,7 @@ class MovieGridVideoViewController: UIViewController {
 
             self.videos = dataDictionary["results"] as! [[String:Any]]
             
-            videoKey = self.videos[0]["key"] as! String ?? ""
+            videoKey = self.videos[0]["key"] as! String
             self.playerView.load(withVideoId: videoKey)
     
            }
