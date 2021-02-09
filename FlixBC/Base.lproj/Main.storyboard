@@ -144,10 +144,28 @@
                     <view key="view" contentMode="scaleToFill" id="j1w-Df-1q8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sma-G8-QuT" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="F9e-gt-a1L"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Vaj-bh-NeJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sma-G8-QuT" firstAttribute="leading" secondItem="Vaj-bh-NeJ" secondAttribute="leading" id="CiY-0t-GDV"/>
+                            <constraint firstItem="sma-G8-QuT" firstAttribute="top" secondItem="Vaj-bh-NeJ" secondAttribute="top" id="O0e-bK-pPX"/>
+                            <constraint firstItem="Vaj-bh-NeJ" firstAttribute="trailing" secondItem="sma-G8-QuT" secondAttribute="trailing" id="V08-gn-CmC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bef-lb-nLb"/>
+                    <connections>
+                        <outlet property="playerView" destination="sma-G8-QuT" id="Q6g-Rt-8Nb"/>
+                        <outlet property="view" destination="sma-G8-QuT" id="1Lc-oj-5Ut"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQ8-g6-rSW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
