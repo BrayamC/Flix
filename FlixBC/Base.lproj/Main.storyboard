@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="1209" y="-1314"/>
         </scene>
-        <!--Movie Grid View Controller-->
+        <!--Superhero Movies-->
         <scene sceneID="LWP-fb-2bp">
             <objects>
                 <viewController id="tKf-XR-7er" customClass="MovieGridViewController" customModule="FlixBC" customModuleProvider="target" sceneMemberID="viewController">
@@ -58,7 +58,6 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="189" height="268"/>
@@ -73,7 +72,7 @@
                         <viewLayoutGuide key="safeArea" id="mke-rm-FpR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ECO-eZ-LMf"/>
+                    <navigationItem key="navigationItem" title="Superhero Movies" id="ECO-eZ-LMf"/>
                     <connections>
                         <outlet property="collectionView" destination="YOW-L5-7ea" id="46S-9k-pFr"/>
                     </connections>
@@ -82,7 +81,7 @@
             </objects>
             <point key="canvasLocation" x="2224.6376811594205" y="219.64285714285714"/>
         </scene>
-        <!--Movie Grid Detail View Controller-->
+        <!--Details-->
         <scene sceneID="vQ3-gR-twR">
             <objects>
                 <viewController id="XGX-gD-gUM" customClass="MovieGridDetailViewController" customModule="FlixBC" customModuleProvider="target" sceneMemberID="viewController">
@@ -99,13 +98,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkT-bK-EhS">
-                                <rect key="frame" x="165" y="361" width="176" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6s-fm-xNy">
                                 <rect key="frame" x="20" y="435" width="374" height="332"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -116,16 +108,22 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5i2-JO-Cps">
                                 <rect key="frame" x="26" y="210" width="125" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="06J-Fd-Flu" kind="show" id="o9W-gk-qqa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkT-bK-EhS">
+                                <rect key="frame" x="186" y="335" width="193" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nRi-JC-DMa"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="h4y-Dm-nn2"/>
+                    <navigationItem key="navigationItem" title="Details" id="h4y-Dm-nn2"/>
                     <connections>
                         <outlet property="backImage" destination="d2W-0s-drw" id="1c7-ND-O1Y"/>
                         <outlet property="nameLabel" destination="fkT-bK-EhS" id="q6S-rF-nKq"/>
@@ -137,7 +135,7 @@
             </objects>
             <point key="canvasLocation" x="2224.6376811594205" y="989.73214285714278"/>
         </scene>
-        <!--Movie Grid Video View Controller-->
+        <!--Trailer-->
         <scene sceneID="sLQ-cY-ahw">
             <objects>
                 <viewController id="06J-Fd-Flu" customClass="MovieGridVideoViewController" customModule="FlixBC" customModuleProvider="target" sceneMemberID="viewController">
@@ -146,7 +144,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sma-G8-QuT" customClass="YTPlayerView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="256" width="414" height="300"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="F9e-gt-a1L"/>
@@ -154,14 +152,14 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vaj-bh-NeJ"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.046193406629923328" blue="0.034069927145026213" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sma-G8-QuT" firstAttribute="leading" secondItem="Vaj-bh-NeJ" secondAttribute="leading" id="CiY-0t-GDV"/>
-                            <constraint firstItem="sma-G8-QuT" firstAttribute="top" secondItem="Vaj-bh-NeJ" secondAttribute="top" id="O0e-bK-pPX"/>
+                            <constraint firstItem="sma-G8-QuT" firstAttribute="top" secondItem="Vaj-bh-NeJ" secondAttribute="top" constant="168" id="O0e-bK-pPX"/>
                             <constraint firstItem="Vaj-bh-NeJ" firstAttribute="trailing" secondItem="sma-G8-QuT" secondAttribute="trailing" id="V08-gn-CmC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Bef-lb-nLb"/>
+                    <navigationItem key="navigationItem" title="Trailer" id="Bef-lb-nLb"/>
                     <connections>
                         <outlet property="playerView" destination="sma-G8-QuT" id="Q6g-Rt-8Nb"/>
                         <outlet property="view" destination="sma-G8-QuT" id="1Lc-oj-5Ut"/>
@@ -258,7 +256,7 @@
             </objects>
             <point key="canvasLocation" x="132" y="220"/>
         </scene>
-        <!--Movie Details View Controller-->
+        <!--Details-->
         <scene sceneID="xH9-o6-Vkn">
             <objects>
                 <viewController id="zeO-pj-sXg" customClass="MovieDetailsViewController" customModule="FlixBC" customModuleProvider="target" sceneMemberID="viewController">
@@ -292,7 +290,7 @@
                         <viewLayoutGuide key="safeArea" id="CMr-MJ-QRa"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="LPW-Ke-ief"/>
+                    <navigationItem key="navigationItem" title="Details" id="LPW-Ke-ief"/>
                     <connections>
                         <outlet property="backDropView" destination="SKw-RM-5gS" id="qaJ-qh-4TS"/>
                         <outlet property="posterView" destination="RAd-U9-w7K" id="6On-Rd-PIS"/>
@@ -348,9 +346,6 @@
         <image name="superhero_tabbar_item" width="21" height="23"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
